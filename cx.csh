@@ -12,7 +12,7 @@ if ($#argv >= 7) set s1 = $7
 if ($#argv >= 8) set s2 = $8
 if ($#argv >= 9) set s3 = $9
 
-set fname = "spiro-$1-$2-$3.png"
+set fname = "images/spiro-$1-$2-$3.png"
 
 #printf %s $fname
 
