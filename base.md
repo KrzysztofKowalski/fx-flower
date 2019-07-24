@@ -2,11 +2,22 @@
 
 Produces beautiful geometry
 
-Only 32kb in size!
+Only 5353 bytes in size!
 
 ```
 maczito:fx-flower k$ du -ks . 
 32	.
+
+maczito:fx-flower k$ wc -c * 
+     310 base.md
+    1357 cx.sh
+       0 im.log
+     128 launch.sh
+     488 preparecommands.sh
+     522 runner.sh
+    2276 samples.sh
+     272 updatereadme.sh
+    5353 total
 
 maczito:fx-flower k$ ls -lha
 total 64
