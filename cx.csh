@@ -13,7 +13,12 @@ if ($#argv >= 8) set s1 = $8
 if ($#argv >= 9) set s2 = $9
 if ($#argv >= 10) set s3 = ${10}
 
-set fname = "${OUTPUT}/spiro-${1}-${2}-${3}.svg"
+
+aformat=`printf "%04d" $1`
+bformat=`printf "%04d" $2`
+cformat=`printf "%04d" $3`
+
+set fname = "${OUTPUT}/spiro-${aformat}-${bformat}-${cformat}.svg"
 
 #printf %s $fname
 

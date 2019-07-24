@@ -9,11 +9,9 @@ brew install parallel gnuplot
 #### Generates entire set of 999^3 images
 
 ```
-mkdir images
-./preparecommands.sh '/Users/k/code/fx' or your project dir if different
+./preparecommands.sh `pwd`
 ./launch.sh
 ```
-
 
 ## For some nice samples press:
 

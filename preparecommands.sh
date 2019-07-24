@@ -1,13 +1,14 @@
 #!/usr/bin/env dash
 
-basedir=/Users/k/code/fx
+basedir=$1
 
 for a in `seq 0 100`
 do
+	aformat=`printf "%04d" $a `
 	for b in `seq 0 100`
 	do
-		
-		commanddir="out/commands/${a}/"
+		bformat=`printf "%04d" $b`
+		commanddir="out/commands/${aformat}/"
 		
 		mkdir -p $commanddir
 		
@@ -18,7 +19,9 @@ do
 		h=$y
 		j=999
 		increment=1
-		./runner.sh "out/base" $x $y $z $g $h $j $increment $basedir > "${commanddir}/${b}.sh"
+		
+		
+		./runner.sh "out/base" $x $y $z $g $h $j $increment $basedir > "${commanddir}/${bformat}.sh"
 	done
 done
 
