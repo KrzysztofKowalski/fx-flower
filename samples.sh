@@ -1,6 +1,8 @@
 #!/usr/bin/env dash
 
-mkdir images
+mkdir output
+
+printf "%s\n" "...😀"
 
  ./cx.csh 144 360 144
  ./cx.csh 144 360 576
