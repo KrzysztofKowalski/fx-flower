@@ -1,5 +1,7 @@
 #!/usr/bin/env dash
 
+mkdir images
+
  ./cx.csh 144 360 144
  ./cx.csh 144 360 576
  ./cx.csh 144 360 720
