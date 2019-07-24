@@ -1,11 +1,13 @@
-geometry calculator
+# Geometry calculator
 
-req:
-
+## Requiremens:
+```
 brew install parallel gnuplot
+```
+## Usage:
 
-usage:
-
+```
 mkdir images
 ./preparecommands.sh
 ./launch.sh
+```
