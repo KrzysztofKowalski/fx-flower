@@ -1,3 +1,4 @@
 *.png
 commands.sh
 process3.sh
+.DS_Store
