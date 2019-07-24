@@ -4,8 +4,8 @@ sa=1
 sb=$sa
 sc=$sa
 
-ox=42
-m=24
+ox=33
+m=33
 
 cd /tmp/
 
@@ -18,7 +18,7 @@ do
 			x=$(( $a * $m ))
 			y=$(( $b * $m ))
 			z=$(( $c * $m ))
-			printf "%s %s %s %s\n" "./cx.csh" $x $y $z
+			printf "%s %s %s %s\n" "./cx3.csh" $x $y $z
 		done
 	done
 done
