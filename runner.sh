@@ -1,26 +1,27 @@
 #!/usr/bin/env dash
+basedir=$1
 
-sa=1
-sb=$sa
-sc=$sa
+sa=$2
+sb=$3
+sc=$4
 
-#max loop, complexity o(n3)
-ox=999
-#step used
-m=1
+ea=$5
+eb=$6
+ec=$7
+m=$8
 
-cd /tmp/
-
-for a in `seq $sa $ox`
+for a in `seq $sa $ea`
 do
-	for b in `seq $sb $ox`
+	printf "%s\n" "mkdir -p ${basedir}_$a"
+	for b in `seq $sb $eb`
 	do
-		for c in `seq $sc $ox`
+		printf "%s\n" "mkdir -p ${basedir}_$a/$b"
+		for c in `seq $sc $ec`
 		do
 			x=$(( $a * $m ))
 			y=$(( $b * $m ))
 			z=$(( $c * $m ))
-			printf "%s %s %s %s\n" "./cx.csh" $x $y $z
+			printf "%s %s %s %s %s\n" "./cx.csh" $x $y $z "${basedir}_$a/$b"
 		done
 	done
 done

@@ -5,14 +5,15 @@ if ($#argv < 3) goto help
 set n1 = $1; set n2 = $2; set n3 = $3
 set a1 = 1.0; set a2 = 1.0; set a3 = 1.0
 set s1 = 0.0; set s2 = 0.0; set s3 = 0.0
-if ($#argv >= 4) set a1 = $4
-if ($#argv >= 5) set a2 = $5
-if ($#argv >= 6) set a3 = $6
-if ($#argv >= 7) set s1 = $7
-if ($#argv >= 8) set s2 = $8
-if ($#argv >= 9) set s3 = $9
+set OUTPUT=$4
+if ($#argv >= 5) set a1 = $5
+if ($#argv >= 6) set a2 = $6
+if ($#argv >= 7) set a3 = $7
+if ($#argv >= 8) set s1 = $8
+if ($#argv >= 9) set s2 = $9
+if ($#argv >= 10) set s3 = ${10}
 
-set fname = "images/spiro-$1-$2-$3.png"
+set fname = "${OUTPUT}/spiro-${1}-${2}-${3}.svg"
 
 #printf %s $fname
 
@@ -34,7 +35,7 @@ cat <<EOF | gnuplot
       + ${a2}*exp(n2p*t+s2p) \
       + ${a3}*exp(n3p*t+s3p)
 #
- set terminal png size 3333,3333
+ set terminal svg size 777,777
  set output "${fname}"
 #
  set samples 2001

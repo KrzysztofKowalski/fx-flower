@@ -34,7 +34,7 @@ cat <<EOF | gnuplot
       + ${a2}*exp(n2p*t+s2p) \
       + ${a3}*exp(n3p*t+s3p)
 #
- set terminal png size 3333,3333
+ set terminal png size 7777,7777
  set output "${fname}"
 #
  set samples 2001
