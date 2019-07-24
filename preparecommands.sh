@@ -1,6 +1,10 @@
 #!/usr/bin/env dash
 
 basedir=$1
+imgdir=$2
+
+mkdir -p $basedir 
+mkdir -p $imgdir
 
 for a in `seq 0 100`
 do
@@ -21,7 +25,7 @@ do
 		increment=1
 		
 		output="${commanddir}/${bformat}.sh"
-		./runner.sh "out/base" $x $y $z $g $h $j $increment $basedir > $output
+		./runner.sh $imgdir $x $y $z $g $h $j $increment $basedir > $output
 		chmod +x $output
 	done
 done
