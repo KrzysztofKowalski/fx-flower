@@ -42,8 +42,10 @@ brew install parallel gnuplot
 
 #### Generates entire set of 999^3 images
 
+If you want to generate less, tweak parallel command to include less input.
+
 ```
-./preparecommands.sh `pwd`
+./preparecommands.sh `pwd` out/images
 ./launch.sh
 ```
 
