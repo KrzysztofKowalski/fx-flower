@@ -1,3 +1,3 @@
 #!/usr/bin/env dash
 
-parallel --bar -eta -j 8 < commands.sh 
+parallel --bar -eta -j 32 < commands.sh 
