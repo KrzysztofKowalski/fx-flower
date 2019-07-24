@@ -56,6 +56,14 @@ If you want to generate less, tweak parallel command to include less input.
 open samples
 ```
 
+## To generate just 1 image
+
+```
+mkdir tmp
+/cx.sh 480 648 874 tmp/
+open tmp
+```
+
 ### Links
 
 https://linuxgazette.net/133/luana.html
