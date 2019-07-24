@@ -20,8 +20,9 @@ do
 		j=999
 		increment=1
 		
-		
-		./runner.sh "out/base" $x $y $z $g $h $j $increment $basedir > "${commanddir}/${bformat}.sh"
+		output="${commanddir}/${bformat}.sh"
+		./runner.sh "out/base" $x $y $z $g $h $j $increment $basedir > $output
+		chmod +x $output
 	done
 done
 
