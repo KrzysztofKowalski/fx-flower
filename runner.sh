@@ -24,7 +24,7 @@ do
 			x=$(( $a * $m ))
 			y=$(( $b * $m ))
 			z=$(( $c * $m ))
-			printf "%s %s %s %s %s\n" "${cxdir}/cx.csh" $x $y $z "${basedir}_${aformat}/${bformat}"
+			printf "%s %s %s %s %s\n" "${cxdir}/cx.sh" $x $y $z "${basedir}_${aformat}/${bformat}"
 		done
 	done
 done
