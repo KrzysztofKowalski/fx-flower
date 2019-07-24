@@ -10,7 +10,7 @@ brew install parallel gnuplot
 
 ```
 mkdir images
-./preparecommands.sh
+./preparecommands.sh '/Users/k/code/fx' or your project dir if different
 ./launch.sh
 ```
 
@@ -19,5 +19,5 @@ mkdir images
 
 ```
 ./samples.sh
-open images
+open samples
 ```

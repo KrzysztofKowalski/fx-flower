@@ -1,5 +1,7 @@
 #!/usr/bin/env dash
 
+basedir=/Users/k/code/fx
+
 for a in `seq 0 100`
 do
 	for b in `seq 0 100`
@@ -16,7 +18,7 @@ do
 		h=$y
 		j=999
 		increment=1
-		./runner.sh "out/base" $x $y $z $g $h $j $increment > "${commanddir}/${b}.sh"
+		./runner.sh "out/base" $x $y $z $g $h $j $increment $basedir > "${commanddir}/${b}.sh"
 	done
 done
 

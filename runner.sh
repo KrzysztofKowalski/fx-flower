@@ -9,6 +9,7 @@ ea=$5
 eb=$6
 ec=$7
 m=$8
+cxdir=$9
 
 for a in `seq $sa $ea`
 do
@@ -21,7 +22,7 @@ do
 			x=$(( $a * $m ))
 			y=$(( $b * $m ))
 			z=$(( $c * $m ))
-			printf "%s %s %s %s %s\n" "./cx.csh" $x $y $z "${basedir}_$a/$b"
+			printf "%s %s %s %s %s\n" "${cxdir}/cx.csh" $x $y $z "${basedir}_$a/$b"
 		done
 	done
 done
