@@ -20,7 +20,7 @@ do
 			x=$(( $a * $m ))
 			y=$(( $b * $m ))
 			z=$(( $c * $m ))
-			printf "%s %s %s %s\n" "./cx3.csh" $x $y $z
+			printf "%s %s %s %s\n" "./cx.csh" $x $y $z
 		done
 	done
 done
