@@ -20,6 +20,10 @@ brew install parallel gnuplot
 open samples
 ```
 
+### Links
+
+https://linuxgazette.net/133/luana.html
+
 ## Samples
 
 Values: Values: 144 360 144
