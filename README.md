@@ -40,7 +40,7 @@ brew install parallel gnuplot
 ```
 ## Usage
 
-#### Generates entire set of 999^3 images
+Generates entire set of 999^3 images
 
 If you want to generate less, tweak parallel command to include less input.
 
