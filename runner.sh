@@ -4,8 +4,10 @@ sa=1
 sb=$sa
 sc=$sa
 
-ox=33
-m=33
+#max loop, complexity o(n3)
+ox=999
+#step used
+m=1
 
 cd /tmp/
 
