@@ -1,5 +1,28 @@
 # Geometry calculator
 
+Produces beautiful geometry
+
+Only 32kb in size!
+
+```
+maczito:fx-flower k$ du -ks . 
+32	.
+
+maczito:fx-flower k$ ls -lha
+total 64
+drwxr-xr-x  11 k     wheel   352B 24 lip 23:43 .
+drwxrwxrwt  14 root  wheel   448B 24 lip 23:42 ..
+-rw-r--r--   1 k     wheel    44B 24 lip 23:43 .gitignore
+-rw-r--r--   1 k     wheel   310B 24 lip 23:43 base.md
+-rwxr-xr-x   1 k     wheel   1,3K 24 lip 23:43 cx.sh
+-rw-r--r--   1 k     wheel     0B 24 lip 23:43 im.log
+-rwxr-xr-x   1 k     wheel   128B 24 lip 23:43 launch.sh
+-rwxr-xr-x   1 k     wheel   488B 24 lip 23:43 preparecommands.sh
+-rwxr-xr-x   1 k     wheel   522B 24 lip 23:43 runner.sh
+-rwxr-xr-x   1 k     wheel   2,2K 24 lip 23:43 samples.sh
+-rwxr-xr-x   1 k     wheel   272B 24 lip 23:43 updatereadme.sh
+```
+
 ## Requiremens:
 ```
 brew install parallel gnuplot
