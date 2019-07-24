@@ -18,7 +18,7 @@ do
 	for b in `seq $sb $eb`
 	do
 		bformat=`printf "%04d" $b `
-		printf "%s\n" "mkdir -p ${basedir}_$a/$b"
+		printf "%s\n" "mkdir -p ${basedir}_${aformat}/${bformat}"
 		for c in `seq $sc $ec`
 		do
 			x=$(( $a * $m ))

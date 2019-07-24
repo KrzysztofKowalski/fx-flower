@@ -5,7 +5,7 @@ if ($#argv < 3) goto help
 set n1 = $1; set n2 = $2; set n3 = $3
 set a1 = 1.0; set a2 = 1.0; set a3 = 1.0
 set s1 = 0.0; set s2 = 0.0; set s3 = 0.0
-set OUTPUT=$4
+set output = $4
 if ($#argv >= 5) set a1 = $5
 if ($#argv >= 6) set a2 = $6
 if ($#argv >= 7) set a3 = $7
@@ -14,11 +14,13 @@ if ($#argv >= 9) set s2 = $9
 if ($#argv >= 10) set s3 = ${10}
 
 
-aformat=`printf "%04d" $1`
-bformat=`printf "%04d" $2`
-cformat=`printf "%04d" $3`
+set aformat = `printf "%04d" $n1`
 
-set fname = "${OUTPUT}/spiro-${aformat}-${bformat}-${cformat}.svg"
+set bformat = `printf "%04d" $n2`
+
+set cformat = `printf "%04d" $n3`
+
+set fname = "${output}/spiro-${aformat}-${bformat}-${cformat}.svg"
 
 #printf %s $fname
 
